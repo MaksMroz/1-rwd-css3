@@ -83,3 +83,56 @@ h2 {
         font-size: 1.7em;
     }
 }
+
+/*
+*
+*
+* /// WERSJA MNIEJ NIŻ 1170PX I WIĘCEJ NIŻ 992PX - *    KONIEC
+*
+*/
+
+/*
+*
+*
+* /// WERSJA MNIEJ 992PX
+*
+*/
+
+
+
+
+@media (max-width: 991px) {
+    .main {
+        background-image: url('../img/man-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        padding: 0;
+        height: 50vh;
+        width: auto;
+        position: relative;
+    }
+
+    .texts {
+        position: absolute;
+        color: #000;
+        text-align: center;
+        top: 50vh;
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    h1, h2 {
+        /* align-self: flex-end; */
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+}
