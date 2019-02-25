@@ -11,6 +11,13 @@ body {
     text-transform: uppercase
 }
 
+/*
+*
+*
+* /// WERSJA WIĘCEJ NIŻ 1170PX
+*
+*/
+
 .main {
     background-image: url('../img/man-1.jpg');
     background-size: cover;
@@ -31,3 +38,48 @@ h2 {
     font-size: 2.1em;
 }
 
+/*
+*
+*
+* /// WERSJA WIĘCEJ NIŻ 1170PX - koniec
+*
+*/
+
+/*
+*
+*
+* /// WERSJA MNIEJ NIŻ 1170PX I WIĘCEJ NIŻ 992PX
+*
+*/
+
+@media (min-width: 992px) and (max-width: 1170px) {
+    .main {
+        background-image: url('../img/man-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        padding: 0;
+        height: 70vh;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: flex-end;
+        justify-content: flex-start;
+    }
+
+    .texts {
+        padding-top: 10em;
+        padding-right: 3.1em;
+    }
+
+    h1, h2 {
+        align-self: flex-end;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+}
